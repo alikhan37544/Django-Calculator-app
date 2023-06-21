@@ -1,25 +1,146 @@
-table{
-    margin-left:auto; 
-    margin-right:auto;
-}
+/* Updated styles for the calculator */
 
-textarea{
+body {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .jumbotron {
+    background-color: #343a40;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .display-3 {
+    color: #fff;
+  }
+  
+  .lead {
+    color: #dee2e6;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+  
+  textarea {
     display: block;
     margin-bottom: 8px;
-    margin-left:auto; 
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
- }
-
- button{
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    width: 200px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #292929;
+    color: #fff;
+  }
+  
+  button {
     height: 40px;
     width: 40px;
- }
- #opac{
-    opacity: 0.25;
-    /* margin-left: 32%; */
-    /* margin-bottom: 3px; */
-    height: 19px;
-    width: 87px;
-    margin: auto;
-}
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: #464646;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: buttonScale 0.3s ease-in-out, buttonFloat 3s infinite ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #646464;
+  }
+  
+  button:active {
+    background-color: #363636;
+  }
+  
+  button#eq {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  button#eq:hover {
+    background-color: #f57c00;
+  }
+  
+  button#eq:active {
+    background-color: #e65100;
+  }
+  
+  button#clrTxt {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  button#clrTxt:hover {
+    background-color: #d32f2f;
+  }
+  
+  button#clrTxt:active {
+    background-color: #b71c1c;
+  }
+  
+  button#del {
+    background-color: #9e9e9e;
+  }
+  
+  button#del:hover {
+    background-color: #757575;
+  }
+  
+  button#del:active {
+    background-color: #616161;
+  }
+  
+  button#decp {
+    background-color: #9e9e9e;
+  }
+  
+  button#decp:hover {
+    background-color: #757575;
+  }
+  
+  button#decp:active {
+    background-color: #616161;
+  }
+  
+  /* Animation styles */
+  
+  @keyframes buttonScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes buttonFloat {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
